@@ -20,3 +20,13 @@ public class Humain {
         System.out.println(this.toString());
     }
 }
+/*
+ * Q9 :
+ * Si on déplace la méthode toString() dans les sous-classes (Homme, Femme),
+ * cela entraîne une duplication de code car les attributs (nom, prénom, âge)
+ * sont déjà définis dans la classe parente Humain.
+ * Ainsi, chaque sous-classe devrait réimplémenter toString(), ce qui complique
+ * la maintenance. 
+ * Il est donc préférable de garder toString() dans Humain,
+ * sauf si on veut un affichage spécifique à chaque sous-classe.
+ */
