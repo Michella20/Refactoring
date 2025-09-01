@@ -19,6 +19,7 @@ public class Humain implements Consommation {
     public void details() {
         System.out.println(this.toString());
     }
+
     @Override
     public void manger() {
         System.out.println(prenom + " " + nom + " est en train de manger.");
@@ -29,14 +30,19 @@ public class Humain implements Consommation {
         System.out.println(prenom + " " + nom + " est en train de boire.");
     }
 
-    // Q12 : méthode ami()
     public void ami(Humain autre) {
+        ami(autre, 100); // valeur par défaut
+    }
+
+    public void ami(Humain autre, int duree) {
         System.out.println(this.prenom + " " + this.nom + " est ami(e) avec " 
-                           + autre.prenom + " " + autre.nom);
+                           + autre.prenom + " " + autre.nom
+                           + " pour " + duree + " jours.");
     }
 }
+
 /*
- * Q9 :
+ * Reponse de la Question 9 :
  * Si on déplace la méthode toString() dans les sous-classes (Homme, Femme),
  * cela entraîne une duplication de code car les attributs (nom, prénom, âge)
  * sont déjà définis dans la classe parente Humain.
