@@ -7,13 +7,15 @@ public class Femme extends Humain {
     }
 
     public static void main(String[] args) {
-        Homme homme = new Homme("Martin", "Jean", 25);
-        Femme femme = new Femme("Dupont", "Alice", 23);
+        Homme homme = new Homme("Mahefa", "Mickael", 25);
+        Femme femme = new Femme("Liantsoa", "Shania", 23);
 
-        // Test affichage normal
-        femme.ami(homme); // durée par défaut = 100
+        homme.details();
+        femme.details();
+        
+        homme.boire();
+        femme.manger(); 
 
-        // Test avec durée personnalisée
-        homme.ami(femme, 365); 
+        homme.ami(femme);
     }
 }
