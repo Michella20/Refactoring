@@ -1,6 +1,6 @@
 package iut.bad;
 
-public class Humain {
+public class Humain implements Consommation {
     protected String nom;
     protected String prenom;
     protected int age;
