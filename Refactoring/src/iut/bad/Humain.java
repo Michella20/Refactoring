@@ -19,12 +19,20 @@ public class Humain implements Consommation {
     public void details() {
         System.out.println(this.toString());
     }
+    @Override
     public void manger() {
         System.out.println(prenom + " " + nom + " est en train de manger.");
     }
 
+    @Override
     public void boire() {
         System.out.println(prenom + " " + nom + " est en train de boire.");
+    }
+
+    // Q12 : méthode ami()
+    public void ami(Humain autre) {
+        System.out.println(this.prenom + " " + this.nom + " est ami(e) avec " 
+                           + autre.prenom + " " + autre.nom);
     }
 }
 /*
