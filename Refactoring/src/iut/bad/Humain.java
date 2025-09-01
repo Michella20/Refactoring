@@ -19,6 +19,13 @@ public class Humain {
     public void details() {
         System.out.println(this.toString());
     }
+    public void manger() {
+        System.out.println(prenom + " " + nom + " est en train de manger.");
+    }
+
+    public void boire() {
+        System.out.println(prenom + " " + nom + " est en train de boire.");
+    }
 }
 /*
  * Q9 :
